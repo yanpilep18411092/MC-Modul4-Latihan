@@ -62,6 +62,21 @@ class RecyclerViewActivity : AppCompatActivity() {
             ImgData(
                 R.drawable.eurimo,getString(R.string.eurimoo), getString(R.string.eurimoo_desc)
             ),
+            ImgData(
+                R.drawable.udang_selingkuh,getString(R.string.udang_selingkuh), getString(R.string.udang_selingkuh_desc)
+            ),
+            ImgData(
+                R.drawable.ulat_sagu,getString(R.string.ulat_sagu), getString(R.string.ulat_sagu_desc)
+            ),
+            ImgData(
+                R.drawable.sarang_semut,getString(R.string.sarang_semut), getString(R.string.sarang_semut_desc)
+            ),
+            ImgData(
+                R.drawable.keripik_keladi,getString(R.string.keripik_keladi), getString(R.string.keripik_keladi_desc)
+            ),
+            ImgData(
+                R.drawable.sabeta,getString(R.string.sabeta), getString(R.string.sabeta_desc)
+            ),
         )
 
         val myRecyclerView = findViewById<RecyclerView>(R.id.myRV)
