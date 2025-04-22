@@ -109,6 +109,17 @@ class RecyclerViewActivity : AppCompatActivity() {
                 Toast.makeText(this, "Settings diklik", Toast.LENGTH_SHORT).show()
                 true
             }
+            R.id.action_logout -> {
+                // OPSI 1
+                // Contoh logout: keluar dari aplikasi
+                //finishAffinity() // Menutup semua activity
+
+                // OPSI 2
+                val intent = Intent(this, LoginActivity::class.java)
+                intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                startActivity(intent)
+                true
+            }
             else -> super.onOptionsItemSelected(item)
         }
     }
