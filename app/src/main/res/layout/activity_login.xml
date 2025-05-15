@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login"
+    android:background="@drawable/noken1"
     tools:context=".LoginActivity">
 
 
@@ -54,21 +54,21 @@
             android:fontFamily="sans-serif-condensed"
             android:includeFontPadding="false"
             android:text="E-Mail"
-            android:textAlignment="center"
-            android:textColor="#FF954548"
+            android:textAlignment="textStart"
+            android:textColor="#FFFFFF"
             android:textSize="18sp" />
 
         <EditText
             android:id="@+id/edtEmail"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@drawable/edt_style"
+            android:background="@drawable/noken_edt_style"
             android:ems="10"
-            android:hint="Type email"
+            android:hint="Masukkan email"
             android:inputType="textEmailAddress"
             android:paddingStart="16dp"
-            android:textColor="#13BABA"
-            android:textColorHint="#88877B"
+            android:textColor="#000000"
+            android:textColorHint="#D5D5D4"
             android:textSize="18sp" />
 
         <TextView
@@ -80,21 +80,21 @@
             android:fontFamily="sans-serif-condensed"
             android:includeFontPadding="false"
             android:text="Password"
-            android:textAlignment="center"
-            android:textColor="#FF954548"
+            android:textAlignment="textStart"
+            android:textColor="#FFFFFF"
             android:textSize="18sp" />
 
         <EditText
             android:id="@+id/edtPassword"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@drawable/edt_style"
+            android:background="@drawable/noken_edt_style"
             android:ems="10"
-            android:hint="Type password"
+            android:hint="Masukkan password"
             android:inputType="textPassword"
             android:paddingStart="16dp"
-            android:textColor="#13BABA"
-            android:textColorHint="#88877B"
+            android:textColor="#000000"
+            android:textColorHint="#D5D5D4"
             android:textSize="18sp" />
 
         <TextView
@@ -107,9 +107,8 @@
             android:includeFontPadding="false"
             android:text="Forget password"
             android:textAlignment="textEnd"
-            android:textColor="#4A73C4"
-            android:textSize="18sp"
-            android:textStyle="bold"/>
+            android:textColor="#6391FF"
+            android:textSize="18sp"/>
 
     </LinearLayout>
 
@@ -130,12 +129,10 @@
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@drawable/btn_dual_clr"
-            android:scaleX="1"
-            android:scaleY="1.3"
+            android:background="@drawable/noken_btn_red_rounded"
             android:text="Login"
             android:textAlignment="center"
-            android:textColor="#FF954548"
+            android:textColor="#FBFBFB"
             android:textSize="16sp" />
 
     </LinearLayout>
@@ -159,7 +156,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-condensed"
             android:text="Belum punya akun"
-            android:textColor="#FF954548"
+            android:textColor="#E6E6E6"
             android:textSize="16sp" />
 
         <TextView
@@ -168,10 +165,9 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
             android:fontFamily="sans-serif-condensed"
-            android:text="Register now"
-            android:textColor="#4A73C4"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            android:text="Register "
+            android:textColor="#6391FF"
+            android:textSize="16sp"/>
 
     </LinearLayout>
 

@@ -46,7 +46,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="16dp"
                     android:gravity="start"
-                    android:text="@string/udang_selingkuh_desc"
+                    android:text="@string/noken_gantung_desc"
                     android:textSize="17sp" />
 
             </LinearLayout>
