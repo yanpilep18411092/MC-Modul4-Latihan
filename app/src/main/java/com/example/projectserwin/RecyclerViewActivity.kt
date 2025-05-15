@@ -36,52 +36,38 @@ class RecyclerViewActivity : AppCompatActivity() {
             insets
         }
 
+        // DATA NOKEN
         val imgList = listOf<ImgData>(
 
             ImgData(
-                R.drawable.udang_selingkuh,getString(R.string.udang_selingkuh), getString(R.string.udang_selingkuh_desc)
+                R.drawable.noken1,getString(R.string.noken_gantung), getString(R.string.noken_gantung_desc)
             ),
             ImgData(
-                R.drawable.ulat_sagu,getString(R.string.ulat_sagu), getString(R.string.ulat_sagu_desc)
+                R.drawable.noken2,getString(R.string.noken_perang), getString(R.string.noken_perang_desc)
             ),
             ImgData(
-                R.drawable.sarang_semut,getString(R.string.sarang_semut), getString(R.string.sarang_semut_desc)
+                R.drawable.noken3,getString(R.string.noken_sekolah), getString(R.string.noken_sekolah_desc)
             ),
             ImgData(
-                R.drawable.sagu_lempeng,getString(R.string.sagu_lempeng), getString(R.string.sagu_lempeng_desc)
+                R.drawable.noken4,getString(R.string.noken_raja), getString(R.string.noken_raja_desc)
             ),
             ImgData(
-                R.drawable.keripik_keladi,getString(R.string.keripik_keladi), getString(R.string.keripik_keladi_desc)
+                R.drawable.noken5,getString(R.string.noken_bayi), getString(R.string.noken_bayi_desc)
             ),
             ImgData(
-                R.drawable.sabeta,getString(R.string.sabeta), getString(R.string.sabeta_desc)
+                R.drawable.noken6,getString(R.string.noken_upacara), getString(R.string.noken_upacara_desc)
             ),
             ImgData(
-                R.drawable.aunu_senebre,getString(R.string.aunu_senebre), getString(R.string.aunu_senebre_desc)
+                R.drawable.noken1,getString(R.string.noken_mini), getString(R.string.noken_mini_desc)
             ),
             ImgData(
-                R.drawable.eurimo,getString(R.string.eurimoo), getString(R.string.eurimoo_desc)
-            ),
-            ImgData(
-                R.drawable.udang_selingkuh,getString(R.string.udang_selingkuh), getString(R.string.udang_selingkuh_desc)
-            ),
-            ImgData(
-                R.drawable.ulat_sagu,getString(R.string.ulat_sagu), getString(R.string.ulat_sagu_desc)
-            ),
-            ImgData(
-                R.drawable.sarang_semut,getString(R.string.sarang_semut), getString(R.string.sarang_semut_desc)
-            ),
-            ImgData(
-                R.drawable.keripik_keladi,getString(R.string.keripik_keladi), getString(R.string.keripik_keladi_desc)
-            ),
-            ImgData(
-                R.drawable.sabeta,getString(R.string.sabeta), getString(R.string.sabeta_desc)
+                R.drawable.noken2,getString(R.string.noken_modern), getString(R.string.noken_modern_desc)
             ),
         )
 
-        val myRecyclerView = findViewById<RecyclerView>(R.id.myRV)
+        val myRecyclerView = binding.myRV
 
-        gridLayoutManager = GridLayoutManager(applicationContext, 3, LinearLayoutManager.VERTICAL, false)
+        gridLayoutManager = GridLayoutManager(applicationContext, 1, LinearLayoutManager.HORIZONTAL, false)
 
         myRecyclerView?.layoutManager = gridLayoutManager
         myRecyclerView?.setHasFixedSize(true)
@@ -93,11 +79,13 @@ class RecyclerViewActivity : AppCompatActivity() {
 
     }
 
+    // MENAMPILKAN ICON MENU KE HALAMAN UTAMA
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_main, menu)
         return true
     }
 
+    // MENANGANI AKSI KETIKA ITEM MENU DI TEKAN
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.action_profile -> {

@@ -28,7 +28,7 @@ class LoginActivity : AppCompatActivity() {
             startActivity(Intent(this, ForgetPasswordActivity::class.java))
         }
 
-        // Mengatur aksi klik tombol login untuk berpindah ke halaman Home
+        // Mengatur aksi klik tombol login untuk berpindah ke halaman Utama
         binding.btnLogin.setOnClickListener {
             val intent = Intent(this, RecyclerViewActivity::class.java)
             startActivity(intent)
