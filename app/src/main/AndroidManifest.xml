@@ -12,29 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjectSErwin"
         tools:targetApi="31">
-        <activity
-            android:name=".LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ForgetPasswordActivity"
-            android:exported="false" />
-        <activity
-            android:name=".RegisterActivity"
-            android:exported="false" />
-        <activity
-            android:name=".RecyclerViewActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ProfileActivity"
-            android:exported="false" />
-        <activity
-            android:name=".DetailActivity"
-            android:exported="false"
-            android:parentActivityName=".RecyclerViewActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".RecyclerViewActivity" />
-        </activity>
+
         <activity
             android:name=".WelcomeImkActivity"
             android:exported="true">
