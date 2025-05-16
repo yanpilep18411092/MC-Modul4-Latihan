@@ -18,7 +18,7 @@
         android:textStyle="bold"
         android:textColor="@color/teal_700"
         android:text="Second Activity"
-        android:layout_marginTop="40dp" />
+        android:layout_marginTop="60dp" />
 
     <TextView
         android:id="@+id/txtPesan"
