@@ -28,7 +28,7 @@ class SecondActivity : AppCompatActivity() {
 
         //capture layout dari TevtView dan setting string sebagai textnya
         binding.txtNama.text = "Nama : " + nama
-        binding.txtEmail.text =  email
+        binding.txtEmail.text =  "Email :"+ email
         binding.txtPhone.text = "Phone : " + phone
     }
 }
