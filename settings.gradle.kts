@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ProjectMC"
+rootProject.name = "Modul4Latihan"
 include(":app")

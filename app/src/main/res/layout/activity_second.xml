@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingHorizontal="10dp"
-        android:hint="Phone"
+        android:text="pesan tampil disini"
         android:textSize="22dp"
         android:textColor="#fb0521"
         android:layout_marginTop="30dp"/>
