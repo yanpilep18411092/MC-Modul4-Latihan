@@ -20,15 +20,7 @@ class SecondActivity : AppCompatActivity() {
             insets
         }
 
-        //dapatkan intent yang memulai aktivitas ini
-        val nama = intent.getStringExtra("EXTRA_MESSAGE1")
-        val email = intent.getStringExtra("EXTRA_MESSAGE2")
-        val phone = intent.getStringExtra("EXTRA_MESSAGE3")
-
-
-        //capture layout dari TevtView dan setting string sebagai textnya
-        binding.txtNama.text = "Nama : " + nama
-        binding.txtEmail.text =  "Email :"+ email
-        binding.txtPhone.text = "Phone : " + phone
+        val pesan = intent.getStringExtra("EXTRA_MESSAGE")
+        binding.txtPesan.text =  pesan
     }
 }

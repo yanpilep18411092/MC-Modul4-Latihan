@@ -21,32 +21,13 @@
         android:textColor="@color/teal_700"/>
 
     <EditText
-        android:id="@+id/editNama"
+        android:id="@+id/editPesan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="Name"
-        android:textSize="20dp"
-        android:layout_marginTop="60dp" />
-
-    <EditText
-        android:id="@+id/editEmail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Email"
-        android:textSize="20dp"
-        android:layout_marginTop="30dp" />
-
-    <EditText
-        android:id="@+id/editPhone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Phone"
+        android:hint="Tulis Pesan..."
         android:textSize="20dp"
         android:layout_marginTop="30dp" />
 
@@ -54,6 +35,7 @@
         android:id="@+id/btnFirst"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
         android:layout_gravity="center"
         android:layout_marginTop="50dp"
         android:fontFamily="sans-serif-black"

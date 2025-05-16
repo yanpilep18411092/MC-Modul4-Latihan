@@ -28,9 +28,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnFirst.setOnClickListener() {
             val intent = Intent(this, SecondActivity::class.java)
-            intent.putExtra("EXTRA_MESSAGE1", binding.editNama.text.toString())
-            intent.putExtra("EXTRA_MESSAGE2", binding.editEmail.text.toString())
-            intent.putExtra("EXTRA_MESSAGE3", binding.editPhone.text.toString())
+            intent.putExtra("EXTRA_MESSAGE", binding.editPesan.text.toString())
             startActivity(intent)
         }
     }

@@ -21,30 +21,13 @@
         android:layout_marginTop="40dp" />
 
     <TextView
-        android:id="@+id/txtNama"
+        android:id="@+id/txtPesan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Nama"
-        android:textSize="20dp"
-        android:textColor="#fb0521"
-        android:layout_marginTop="40dp"/>
-
-    <TextView
-        android:id="@+id/txtEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="E-mail"
-        android:textSize="20dp"
-        android:textColor="#fb0521"
-        android:layout_marginTop="20dp"/>
-
-    <TextView
-        android:id="@+id/txtPhone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
         android:hint="Phone"
-        android:textSize="20dp"
+        android:textSize="22dp"
         android:textColor="#fb0521"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="30dp"/>
 
 </LinearLayout>
