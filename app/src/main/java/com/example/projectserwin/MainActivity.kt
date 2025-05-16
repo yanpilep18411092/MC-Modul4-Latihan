@@ -8,6 +8,8 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.projectserwin.databinding.ActivityMainBinding
 
+const val EXTRA_MESSAGE = " "
+
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding:ActivityMainBinding
@@ -23,8 +25,12 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        binding.btnLogout.setOnClickListener {
-            val intent = Intent(this, LoginActivity::class.java)
+
+        binding.btnFirst.setOnClickListener() {
+            val intent = Intent(this, SecondActivity::class.java)
+            intent.putExtra("EXTRA_MESSAGE1", binding.editNama.text.toString())
+            intent.putExtra("EXTRA_MESSAGE2", binding.editEmail.text.toString())
+            intent.putExtra("EXTRA_MESSAGE3", binding.editPhone.text.toString())
             startActivity(intent)
         }
     }

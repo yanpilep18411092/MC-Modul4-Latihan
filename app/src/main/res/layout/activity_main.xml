@@ -1,43 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="25dp"
+    android:orientation="vertical"
+    android:padding="15dp"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/tv_register_title"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="212dp"
-        android:padding="4dp"
-        android:text="Content Page"
-        android:textAlignment="center"
-        android:textColor="#1500B3"
-        android:textSize="40sp"
+        android:text="First Activity!"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="center"
+        android:textSize="40dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/teal_700"/>
 
-    <Button
-        android:id="@+id/btnLogout"
+    <EditText
+        android:id="@+id/editNama"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="56dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:text="Logout"
-        android:textColor="#eee"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"/>
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:textSize="20dp"
+        android:layout_marginTop="60dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Email"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:id="@+id/editPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Phone"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:id="@+id/btnFirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-black"
+        android:text="s e n d"
+        android:textColor="#FAFAFA"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</LinearLayout>
