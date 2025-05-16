@@ -16,7 +16,7 @@
         android:text="First Activity!"
         android:textStyle="bold"
         android:layout_gravity="center"
-        android:textSize="40dp"
+        android:textSize="40sp"
         android:layout_marginTop="20dp"
         android:textColor="@color/teal_700"/>
 
@@ -28,7 +28,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="Tulis Pesan..."
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:layout_marginTop="30dp" />
 
     <Button
@@ -42,7 +42,7 @@
         android:fontFamily="sans-serif-black"
         android:text="s e n d"
         android:textColor="#FAFAFA"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
 </LinearLayout>
